@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSLATOR</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/9364/9364104.png" type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+  <div class="container-fluid " style="height: 1038px; background: linear-gradient(232deg, rgba(248,248,252,1) 0%, rgba(239,243,245,1) 53%, rgba(211,213,213,1) 100%); font-family: 'Times New Roman', Times, serif">
+    <form action="/translate" method="POST">
+        <div class="row form-group">
+           <div class="col-12 pt-5 text-center bg-dark">
+            <h1 style="color: aliceblue">TRANSLATE YOUR TEXT</h1>
+           </div>
+        <div class="lang-div col-12">
+            <label style="color: black; padding-top: 20px;">Select Languages : </label>
+            <select name="select-language" id="select-language" class="form-control rounded w-50 " required>
+              <option disabled selected>Select a Language</option>
+              <option  value="hi">Hindi</option>
+              <option  value="en">English</option>
+              <option value="te">Telugu</option>
+              <option  value="ta">Tamil</option>
+              <option  value="tr">Turkish</option>
+              <option value="pa">Panjabi</option>
+              <option value="or">Odia</option>
+              <option value="ml">Malayalam</option>
+              <option value="mr">Marathi</option>
+              <option value="ne">Nepali</option>
+              <option value="fr">French</option>
+              <option value="zh-cn">Chinese (Simplified)</option> 
+              <option value="zh-tw">Chinese (Traditional)</option>
+              <option value="de">German</option>
+              <option value="it">Italian</option>
+              <option value="ja">Japanese</option>
+              <option value="ko">Korean</option>
+              <option value="la">Latin</option>
+              <option value="pt">Portuguese</option>
+              <option value="ro">Romanian</option>
+              <option value="ru">Russian</option>
+              <option value="es">Spanish</option>
+
+            </select>
+        </div>
+
+      <div class="col-12 col-md-4 pt-5">
+        <textarea class="form-control rounded" name="text_to_translate" id="text_to_translate" cols="34" rows="10" placeholder="Enter text here..."></textarea>
+      </div>
+      <div class=" output col-12 col-md-4 text-center" style="padding-top: 50px;">
+        <button type="submit" class="btn w-50 bg-dark text-white rounded btn-outline-secondary" id="translate">TRANSLATE</button>
+        <br>
+        <br>
+        <img src="https://cdn-icons-png.flaticon.com/128/9364/9364104.png" alt="">
+      </div>
+      
+       <div class="col-12 col-md-4 pt-5">
+        <textarea readonly class="form-control rounded" id="translation-result" cols="34" rows="10">{{translation_result}}</textarea>
+      </div>
+      </div>
+    </form>
+  </div>
+  <div class="container-fluid bg-dark text-white text-center h-10%">
+    <p>Copyright @ Thasleema Arif</p>
+    <footer>
+
+    </footer>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
